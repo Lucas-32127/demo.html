@@ -3,86 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DEMO - [NOME DA EMPRESA]</title>
+<title>LUCAS TECH - Lojas Online em Luanda</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f5f5f5}
-.header{background:#0a2540;color:white;padding:20px;text-align:center;border-bottom:4px solid #ffcc00}
-.header h1{color:#ffcc00;font-size:28px}
-.header p{margin-top:5px;opacity:0.8}
-.demo-aviso{background:#ffcc00;color:#0a2540;text-align:center;padding:10px;font-weight:bold}
-.produtos{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:15px;max-width:600px;margin:auto}
-.prod{ background:white; border-radius:12px; padding:10px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-.prod img{width:100%;height:140px;object-fit:cover;border-radius:8px}
-.prod h3{margin:10px 0 5px;font-size:16px}
-.prod .preco{color:#0a2540;font-weight:bold;font-size:18px;margin:5px 0}
-.prod button{background:#25D366;color:white;border:none;padding:10px;width:100%;border-radius:8px;font-weight:bold;cursor:pointer}
-.footer{background:#0a2540;color:white;text-align:center;padding:20px;margin-top:20px}
-.footer a{color:#ffcc00;text-decoration:none;font-weight:bold}
-.cta{position:fixed;bottom:0;left:0;right:0;background:#0a2540;padding:12px;text-align:center;border-top:3px solid #ffcc00}
-.cta button{background:#ffcc00;color:#0a2540;border:none;padding:12px 25px;border-radius:25px;font-weight:bold;font-size:16px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#0a0f1c;color:white}
+.top{background:#ffcc00;color:#0a2540;text-align:center;padding:8px;font-weight:bold;font-size:13px}
+.header{background:#0a2540;padding:25px;text-align:center;border-bottom:3px solid #ffcc00}
+.header h1{font-size:32px;color:#ffcc00;letter-spacing:1px}
+.header p{margin-top:8px;opacity:0.9}
+.hero{padding:30px 20px;text-align:center;max-width:600px;margin:auto}
+.hero h2{font-size:26px;line-height:1.2}
+.hero h2 span{color:#ffcc00}
+.hero p{margin:15px 0;color:#aaa}
+.btn{display:inline-block;background:#25D366;color:white;padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:10px}
+.btn2{background:#ffcc00;color:#0a2540;margin-left:10px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:20px;max-width:600px;margin:auto}
+.card{background:#132040;border:1px solid #1e335a;border-radius:12px;padding:15px;text-align:center}
+.card h3{color:#ffcc00;font-size:16px}
+.card p{font-size:13px;color:#ccc;margin-top:5px}
+.preco-box{background:#132040;border:2px solid #ffcc00;border-radius:15px;padding:20px;margin:20px;max-width:600px;margin:20px auto;text-align:center}
+.preco-box h3{color:#ffcc00}
+.preco{font-size:36px;font-weight:bold;margin:10px 0}
+.footer{background:#060a14;text-align:center;padding:20px;font-size:12px;color:#666;margin-top:20px}
 </style>
 </head>
 <body>
 
+<div class="top">🇦🇴 FEITO EM LUANDA - ENTREGA EM 24H - SUPORTE LOCAL</div>
+
 <div class="header">
-<h1 id="nomeLoja">[NOME DA EMPRESA]</h1>
-<p>Luanda - Angola | Entrega Rápida</p>
+<h1>LUCAS TECH</h1>
+<p>Soluções Digitais | Luanda - Angola</p>
 </div>
 
-<div class="demo-aviso">🔥 DEMO GRÁTIS - LUCAS TECH - 925 356 739 🔥</div>
-
-<div class="produtos">
-<div class="prod">
-<img src="https://via.placeholder.com/300x300/0a2540/ffcc00?text=PRODUTO+1" id="img1">
-<h3 id="prod1Nome">Produto 1 do Cliente</h3>
-<div class="preco" id="prod1Preco">15.000 Kz</div>
-<button onclick="pedir('Produto 1')">Pedir no WhatsApp</button>
+<div class="hero">
+<h2>Sua Loja Online Pronta em <span>24 Horas</span></h2>
+<p>Deixe de vender só no Facebook. Tenha sua loja profissional com pagamento automático e pedidos no WhatsApp.</p>
+<a class="btn" href="https://wa.me/244925356739?text=Olá%20Lucas%20Tech!%20Quero%20minha%20loja%20por%2015.000%20Kz">💬 Pedir no WhatsApp</a>
+<a class="btn btn2" href="#demo">Ver Demo</a>
 </div>
 
-<div class="prod">
-<img src="https://via.placeholder.com/300x300/ffcc00/0a2540?text=PRODUTO+2" id="img2">
-<h3 id="prod2Nome">Produto 2 do Cliente</h3>
-<div class="preco" id="prod2Preco">8.500 Kz</div>
-<button onclick="pedir('Produto 2')">Pedir no WhatsApp</button>
+<div class="cards">
+<div class="card"><h3>✅ Loja Própria</h3><p>Com seu nome e logo</p></div>
+<div class="card"><h3>✅ Pagamento</h3><p>Multicaixa Express</p></div>
+<div class="card"><h3>✅ WhatsApp</h3><p>Pedido cai direto</p></div>
+<div class="card"><h3>✅ Admin</h3><p>Você controla tudo</p></div>
 </div>
+
+<div class="preco-box" id="demo">
+<h3>OFERTA DE LANÇAMENTO</h3>
+<div class="preco">15.000 Kz</div>
+<p>Loja completa + Painel Admin + Suporte 7 dias</p>
+<br>
+<a class="btn" style="width:100%" href="https://wa.me/244925356739?text=Olá!%20Quero%20fechar%20minha%20loja%20por%2015.000%20Kz">QUERO MINHA LOJA AGORA</a>
+<p style="margin-top:10px;font-size:12px">De: 25.000 Kz por 15.000 Kz - Só essa semana</p>
+</div>
+
+<div style="text-align:center;padding:20px;max-width:600px;margin:auto">
+<h3 style="color:#ffcc00">Nossas Lojas</h3>
+<p style="margin-top:10px"><a href="./demo.html" style="color:#25D366;text-decoration:none;font-weight:bold">→ Ver Demo OG VENDAS (Clique aqui)</a></p>
 </div>
 
 <div class="footer">
-<p>Quer sua loja assim? Fala comigo:</p>
-<p><a href="https://wa.me/244925356739">WhatsApp: 925 356 739</a></p>
-<p style="margin-top:10px;font-size:12px;opacity:0.6">Criado por LUCAS TECH - Desde 2024<br>https://lucas-32127.github.io/Lucas-Tech/</p>
-<br><br><br>
+<p>LUCAS TECH - Desde 2024<br>WhatsApp: 925 356 739<br>Luanda, Angola<br><br>
+<a href="https://wa.me/244925356739" style="color:#ffcc00">Fale Conosco</a></p>
 </div>
 
-<div class="cta">
-<button onclick="fechar()">✅ QUERO MINHA LOJA POR 15.000 KZ</button>
-</div>
-
-<script>
-function pedir(prod){
-let numero = "244925356739"; // TROCA PELO NUMERO DO CLIENTE NA DEMO
-let msg = `Olá! Vi a DEMO da loja e quero o ${prod}`;
-window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`,'_blank');
-}
-function fechar(){
-let msg = "Olá Lucas! Vi a DEMO e quero fechar minha loja por 15.000 Kz";
-window.open(`https://wa.me/244925356739?text=${encodeURIComponent(msg)}`,'_blank');
-}
-
-// === TROCA RÁPIDA AQUI ===
-let NOME_EMPRESA = "[NOME DA EMPRESA]"; // <-- TROCA
-let PROD1 = "Camisa Polo"; // <-- TROCA
-let PRECO1 = "12.000 Kz"; // <-- TROCA
-let PROD2 = "Calça Jeans";
-let PRECO2 = "18.000 Kz";
-
-document.getElementById('nomeLoja').innerText = NOME_EMPRESA;
-document.getElementById('prod1Nome').innerText = PROD1;
-document.getElementById('prod1Preco').innerText = PRECO1;
-document.getElementById('prod2Nome').innerText = PROD2;
-document.getElementById('prod2Preco').innerText = PRECO2;
-document.title = "DEMO - " + NOME_EMPRESA;
-</script>
 </body>
 </html>
